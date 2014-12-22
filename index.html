@@ -4,9 +4,117 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 	<title>Funbrary</title>
-	<link href="assets/style.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	
+	<div class="container">
+		<div class="navbar_out">
+			<div id="nav-anchor"></div>
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container-fluid">
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class="icon1"><a href="#"><i></i>About</a></li>
+							<li class="icon2"><a href="#"><i></i>Feature</a></li>
+							<a class="navbar-brand" href="#">Funbrary</a>
+							<li class="icon3"><a href="#"><i></i>Blog</a></li>
+							<li class="icon4"><a href="#"><i></i>Contact</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+			<div class="lang">
+				<span class="active"><a href="#">ENGLISH</a></span> | <span><a href="#">简体中文</a></span> | <span><a href="#">繁體中文</a></span>
+			</div>
+			<input type="checkbox" id="nav-trigger" class="nav-trigger">
+			<label type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" for="nav-trigger">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</label>
+			<a class="navbar-brand logo" href="#">Funbrary</a>
+			<div class="mobile-menu" id="menu">
+				<ul>
+					<li class="icon1 active"><a href="#"><i></i>About</a></li>
+					<li class="icon2 right"><a href="#"><i></i>Feature</a></li>
+					<li class="icon3"><a href="#"><i></i>Blog</a></li>
+					<li class="icon4 right"><a href="#"><i></i>Contact</a></li>
+				</ul>
+				<div>
+					<span class="active"><a href="#">ENGLISH</a></span><span><a href="#">简体中文</a></span><span class="no"><a href="#">繁體中文</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+    /** 
+     * This part does the "fixed navigation after scroll" functionality
+     * We use the jQuery function scroll() to recalculate our variables as the 
+     * page is scrolled/
+     */
+     $(window).scroll(function(){
+     	var window_top = $(window).scrollTop();
+     	var div_top = $('#nav-anchor').offset().top;
+     	if (window_top > div_top) {
+     		$('nav').addClass('navbar-fixed-top');
+     	} else {
+     		$('nav').removeClass('navbar-fixed-top');
+     	}
+     });
+
+    /**
+     * This part causes smooth scrolling using scrollto.js
+     * We target all a tags inside the nav, and apply the scrollto.js to it.
+     */
+     $("#navbar a").click(function(evn){
+     	evn.preventDefault();
+     	$('html,body').scrollTo(this.hash, this.hash); 
+     });
+
+    /**
+     * This part handles the highlighting functionality.
+     * We use the scroll functionality again, some array creation and 
+     * manipulation, class adding and class removing, and conditional testing
+     */
+    var aChildren = $("nav li").children(); // find the a children of the list items
+    var aArray = []; // create the empty aArray
+    for (var i=0; i < aChildren.length; i++) {    
+    	var aChild = aChildren[i];
+    	var ahref = $(aChild).attr('href');
+    	aArray.push(ahref);
+    } // this for loop fills the aArray with attribute href values
+
+    $(window).scroll(function(){
+        var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
+        var windowHeight = $(window).height(); // get the height of the window
+        var docHeight = $(document).height();
+
+        for (var i=0; i < aArray.length; i++) {
+        	var theID = aArray[i];
+            var divPos = $(theID).offset().top; // get the offset of the div from the top of page
+            var divHeight = $(theID).height(); // get the height of the div in question
+            if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
+            	$("a[href='" + theID + "']").addClass("nav-active");
+            } else {
+            	$("a[href='" + theID + "']").removeClass("nav-active");
+            }
+        }
+
+        if(windowPos + windowHeight == docHeight) {
+        	if (!$("nav li:last-child a").hasClass("nav-active")) {
+        		var navActiveCurrent = $(".nav-active").attr("href");
+        		$("a[href='" + navActiveCurrent + "']").removeClass("nav-active");
+        		$("nav li:last-child a").addClass("nav-active");
+        	}
+        }
+    });
+});
+</script>
 </html>
