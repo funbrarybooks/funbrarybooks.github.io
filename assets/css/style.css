@@ -452,7 +452,7 @@ footer span {
 	}
 }
 /* iPhone版 */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 736px) {
 	div.mobile-menu a {
 		font-size: 15px;
 	}
