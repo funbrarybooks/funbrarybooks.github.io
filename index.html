@@ -11,14 +11,13 @@
 <body>
 	<div class="container">
 		<div class="navbar_out">
-			<div id="nav-anchor"></div>
 			<nav class="navbar navbar-default" role="navigation">
 				<div class="container-fluid">
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav">
-							<li class="icon1"><a href="#aboutus"><i></i>About</a></li>
+							<li class="icon1"><a href="#aboutus" class="active"><i></i>About</a></li>
 							<li class="icon2"><a href="#feature"><i></i>Feature</a></li>
-							<a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="Funbrary"></a>
+							<a class="navbar-brand" href="#"><img src="assets/img/logo.svg" alt="Funbrary"></a>
 							<li class="icon3"><a href="blog.html"><i></i>Blog</a></li>
 							<li class="icon4"><a href="#contact"><i></i>Contact</a></li>
 						</ul>
@@ -29,19 +28,19 @@
 				<span class="active"><a href="#">ENGLISH</a></span> | <span><a href="#">简体中文</a></span> | <span><a href="#">繁體中文</a></span>
 			</div>
 			<input type="checkbox" id="nav-trigger" class="nav-trigger">
-			<label type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" for="nav-trigger">
+			<label class="navbar-toggle collapsed" for="nav-trigger">
 				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</label>
-			<a class="navbar-brand logo" href="#"><img src="assets/img/s-logo.png" alt="Funbrary"></a>
+			<a class="navbar-brand logo" href="#"><img src="assets/img/s-logo.svg" alt="Funbrary"></a>
 			<div class="mobile-menu" id="menu">
 				<ul>
-					<li class="icon1 active"><a href="#aboutus"><i></i>About</a></li>
-					<li class="icon2 right"><a href="#feature"><i></i>Feature</a></li>
-					<li class="icon3"><a href="blog.html"><i></i>Blog</a></li>
-					<li class="icon4 right"><a href="#contact"><i></i>Contact</a></li>
+					<li class="icon1 active"><label onclick="javascript:location.href='#aboutus'" for="nav-trigger"><i></i>About</label></li>
+					<li class="icon2 right"><label onclick="javascript:location.href='#feature'" for="nav-trigger"><i></i>Feature</label></li>
+					<li class="icon3"><label onclick="javascript:location.href='blog.html'" for="nav-trigger"><i></i>Blog</label></li>
+					<li class="icon4 right"><label onclick="javascript:location.href='#contact'" for="nav-trigger"><i></i>Contact</label></li>
 				</ul>
 				<div>
 					<span class="active"><a href="#">ENGLISH</a></span><span><a href="#">简体中文</a></span><span class="no"><a href="#">繁體中文</a></span>
@@ -52,19 +51,24 @@
 			<div class="video-container">
 				<iframe src="//www.youtube.com/embed/vsBf_0gDxSM" frameborder="0" width="560" height="315"></iframe>
 			</div>
-			<form>
+			<form class="">
 				<label>Sign Up For Funbrary Newsletter</label>
 				<fieldset>
-					<input type="text" name="" value="" class="name" placeholder="Name">
-					<input type="text" name="" value="" class="mail" placeholder="Email Address">
+					<input type="text" name="" value="" class="name" placeholder="Name / Your Name Please">
+					<input type="text" name="" value="" class="mail error" placeholder="Email Address / Your Email Please">
 					<button type="submit">Send</button>
 				</fieldset>
+				<span>The email look funny! Can you double check it?</span>
+				<div>
+					<i class="fa fa-check-square fa-lg"></i>
+					Thank You For Singning Up!
+				</div>
 			</form>
 		</div>
 		<div id="aboutus">
 			<h2 class="icon1"><i></i>About Us</h2>
 			<div class="left">
-				<img src="assets/img/about_icon.png" alt="About Us">
+				<img src="assets/img/about_icon.svg" alt="About Us">
 				<b>MARCO</b><em>Founder</em>
 			</div>
 			<div class="right">
@@ -130,7 +134,7 @@
 				</p>
 			</div>
 			<footer id="contact">
-				<a href="#"><img src="assets/img/w-logo.png" alt="Funbrary"></a>
+				<a href="#"><img src="assets/img/w-logo.svg" alt="Funbrary"></a>
 				Connect With Us
 				<div>
 					<a href="#"><i class="fa fa-twitter fa-2x"></i></a> <a href="#"><i class="fa fa-facebook fa-2x"></i></a>

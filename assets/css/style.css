@@ -84,7 +84,7 @@ nav.navbar-fixed-top div.container-fluid {
 .navbar-nav > li > a {
 	color: #7EA7BE !important;
 }
-.navbar-nav > li:hover > a {
+.navbar-nav > li:hover > a, .navbar-nav > li > a.active {
 	color: #fff !important;
 }
 .navbar-nav > li.icon1 i, .navbar-nav > li.icon2 i, .navbar-nav > li.icon3 i, .navbar-nav > li.icon4 i {
@@ -96,25 +96,25 @@ nav.navbar-fixed-top div.container-fluid {
 .navbar-nav > li.icon1 i {
 	background: url(../img/nav_icon1.png) 0px 0px no-repeat;
 }
-.navbar-nav > li.icon1:hover i {
+.navbar-nav > li.icon1:hover i, .navbar-nav > li.icon1 > a.active i {
 	background: url(../img/nav_icon1.png) 0px -50px no-repeat;
 }
 .navbar-nav > li.icon2 i {
 	background: url(../img/nav_icon2.png) 0px 0px no-repeat;
 }
-.navbar-nav > li.icon2:hover i {
+.navbar-nav > li.icon2:hover i, .navbar-nav > li.icon2 > a.active i {
 	background: url(../img/nav_icon2.png) 0px -50px no-repeat;
 }
 .navbar-nav > li.icon3 i {
 	background: url(../img/nav_icon3.png) 0px 0px no-repeat;
 }
-.navbar-nav > li.icon3:hover i {
+.navbar-nav > li.icon3:hover i, .navbar-nav > li.icon3 > a.active i {
 	background: url(../img/nav_icon3.png) 0px -50px no-repeat;
 }
 .navbar-nav > li.icon4 i {
 	background: url(../img/nav_icon4.png) 0px 0px no-repeat;
 }
-.navbar-nav > li.icon4:hover i {
+.navbar-nav > li.icon4:hover i, .navbar-nav > li.icon4 > a.active i {
 	background: url(../img/nav_icon4.png) 0px -50px no-repeat;
 }
 div#main {
@@ -160,6 +160,31 @@ div#main > form > fieldset > input, div#main > form > fieldset > button {
 	border: 0;
 	float: left;
 	padding: 0 15px;
+	outline: 0;
+}
+div#main > form > fieldset > input.error {
+	border: 3px solid #D96D00;
+}
+.error::-webkit-input-placeholder { /* WebKit browsers */
+    color: #D96D00;
+}
+.error:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #D96D00;
+    opacity: 1;
+}
+.error::-moz-placeholder { /* Mozilla Firefox 19+ */
+    olor: #D96D00;
+    opacity: 1;
+}
+.error:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #D96D00;
+}
+div#main > form > span {
+	color: #D96D00;
+	font-size: 20px;
+	margin-top: 15px;
+	padding: 0 5px;
+	display: none;
 }
 div#main > form > fieldset > input.name {
 	width: 35%;
@@ -170,10 +195,34 @@ div#main > form > fieldset > input.mail {
 }
 div#main > form > fieldset > button {
 	width: 15%;
-	background: url(../img/send_icon.jpg) #9A9EAA no-repeat center 5px;
+	background: url(../img/send_icon.png) #9A9EAA no-repeat center 5px;
 	color: #fff;
 	padding-top: 40px;
 	float: right;
+	cursor: pointer;
+}
+div#main > form > fieldset > button:disabled {
+	background-color: #aaa;
+}
+div#main > form > fieldset > button:active {
+	color: #aaa;
+	background: url(../img/send_icon_.png) #eee no-repeat center 5px;
+}
+div#main > form > div {
+	display: none;
+}
+div#main > form.success > label {
+	display: none;
+}
+div#main > form.success > fieldset {
+	display: none;
+}
+div#main > form.success > div {
+	text-align: center;
+	color: #9CC958;
+	font-size: 30px;
+	line-height: 60px;
+	display: block;
 }
 h2 {
 	margin: 0 auto 50px auto;
@@ -199,14 +248,14 @@ h2.icon1 {
 	color: #fff;
 }
 h2.icon1 > i {
-	background: url(../img/h2_icon.jpg) 0px 0px no-repeat;
+	background: url(../img/h2_icon.png) 0px 0px no-repeat;
 }
 h2.icon2 {
 	background: #F8F1EA;
 	color: #E4D7C5;
 }
 h2.icon2 > i {
-	background: url(../img/h2_icon.jpg) 0px -70px no-repeat;
+	background: url(../img/h2_icon.png) 0px -70px no-repeat;
 }
 #aboutus {
 	padding: 150px 100px 100px 100px;
@@ -320,6 +369,7 @@ footer img {
 	margin: 0px auto 15px auto;
 	padding-bottom: 15px;
 	border-bottom: 1px solid #aaa;
+	width: 200px;
 }
 footer div {
 	margin: 15px 0;
@@ -386,6 +436,7 @@ footer span {
 	}
 	#nav-trigger:checked ~ #menu { 
 		display: block;
+		opacity: 1; 
 	}
 	.navbar-toggle {	
 		display: block;
@@ -453,8 +504,14 @@ footer span {
 		border-right: 1px solid #5C6F8D;
 		margin: 30px 0;
 	}
-	div.mobile-menu > ul > li > a {
+	div.mobile-menu > ul > li > label {
 		display: block;
+		cursor: pointer;
+		font-size: 20px;
+		color: #aaa;
+	}
+	div.mobile-menu > ul > li > label:hover {
+		color: #fff;
 	}
 	div.mobile-menu > ul > li.icon1 i, div.mobile-menu > ul > li.icon2 i, div.mobile-menu > ul > li.icon3 i, div.mobile-menu > ul > li.icon4 i {
 		display: block;
@@ -475,7 +532,7 @@ footer span {
 		-moz-opacity:1.00;
 		opacity:1.00;
 	}
-	div.mobile-menu > ul > li.active > a {
+	div.mobile-menu > ul > li.active > label {
 		color: #fff;
 	}
 	div.mobile-menu > ul > li.icon1 i {
@@ -526,7 +583,7 @@ footer span {
 }
 /* iPhone版-menu */
 @media screen and (max-width: 567px) {
-	div.mobile-menu a {
+	div.mobile-menu a, div.mobile-menu > ul > li > label {
 		font-size: 15px;
 	}
 	div.mobile-menu {
@@ -578,6 +635,12 @@ footer span {
 		zoom: 0.6;
 		-moz-transform: scale(0.6);
 		-moz-transform-origin: 0 0;
+	}
+	div#main > form > span {
+		font-size: 13px;
+	}
+	div#main > form.success > div {
+		font-size: 20px;
 	}
 	#aboutus {
 		padding: 100px 30px 100px 30px;
