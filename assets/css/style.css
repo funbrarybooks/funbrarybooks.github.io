@@ -445,6 +445,9 @@ footer span {
 	div.mobile-menu > div > span.no {
 		border: 0;
 	}
+	#aboutus > div.right > p {
+		font-size: 20px;
+	}
 	footer {
 		border-radius: 0px;
 		-moz-border-radius: 0px;
