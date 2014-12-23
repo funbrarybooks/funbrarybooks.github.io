@@ -3,6 +3,7 @@
 body {
 	background: #61C5EE;
 	font-family: Arial, sans-serif;
+	color: #556C7A;
 }
 div.container {
 	border-radius: 20px;
@@ -10,7 +11,6 @@ div.container {
 	-webkit-border-radius: 20px;
 	background: #fff;
 	margin: 25px auto;
-	height: 2000px;
 	width: 1410px;
 	padding: 0;
 }
@@ -140,7 +140,7 @@ div#main {
 }
 div#main > form {
 	padding: 0;
-	margin: 100px auto 0 auto;
+	margin: 100px auto;
 	width: 60%;
 }
 div#main > form > label {
@@ -171,6 +171,118 @@ div#main > form > fieldset > button {
 	background: url(../img/send_icon.jpg) #9A9EAA no-repeat center 5px;
 	color: #fff;
 	padding-top: 40px;
+}
+h2 {
+	margin: 0 auto 50px auto;
+	padding: 30px 0 0 0;
+	color: #fff;
+	font-size: 33px;
+	text-align: center;
+	width: 140px;
+	border-radius: 70px 70px 0 0;
+	-moz-border-radius: 70px 70px 0 0;
+	-webkit-border-radius: 70px 70px 0 0;
+	background: #C8E8F9;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 70px);
+}
+h2 > i {
+	width: 80px;
+	height: 70px;
+	display: block;
+	margin: 0px auto;
+}
+h2 > i.icon1 {
+	background: url(../img/h2_icon.jpg) 0px 0px no-repeat;
+}
+h2 > i.icon2 {
+	background: url(../img/h2_icon.jpg) 0px -70px no-repeat;
+}
+#aboutus {
+	padding: 150px 100px 100px 100px;
+	background: #C8E8F9;
+	position: relative;
+}
+#aboutus > div.left {
+	width: 40%;
+	float: left;
+	text-align: center;
+}
+#aboutus > div.left > img {
+	width: 100%;
+}
+#aboutus > div.left > b {
+	font-size: 50px;
+	display: block;
+	width: 100%;
+	margin: 15px 0 0 0;
+}
+#aboutus > div.left > em {
+	font-size: 30px;
+	display: block;
+	width: 100%;
+}
+#aboutus > div.right {
+	width: 60%;
+	float: right;
+	padding: 30px;
+}
+#aboutus > div.right > p {
+	font-size: 28px;
+	color: #7A94A3;
+}
+#aboutus > div.right > p > i {
+	width: 53px;
+	height: 35px;
+	display: inline-block;
+}
+#aboutus > div.right > p > i.icon_before {
+	background: url(../img/word_icon.png) 0px 0px no-repeat;
+}
+#aboutus > div.right > p > i.icon_after {
+	background: url(../img/word_icon.png) 0px -35px no-repeat;
+}
+footer {
+	padding: 50px 0;
+	background: #566D7C;
+	color: #fff;
+	font-size: 15px;
+	text-align: center;
+	border-radius: 0 0 20px 20px;
+	-moz-border-radius: 0 0 20px 20px;
+	-webkit-border-radius: 0 0 20px 20px;
+}
+footer img {
+	display: block;
+	margin: 0px auto 15px auto;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #aaa;
+}
+footer div {
+	margin: 15px 0;
+}
+footer div a {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	padding: 12px 0;
+	border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	margin: 10px 5px;
+	background: #fff;
+	color: #566D7C;
+}
+footer div a:hover {
+	background: #88969F;
+	color: #fff;
+}
+footer span {
+	margin-top: 15px;
+	display: block;
+	color: #949DA9;
+	font-size: 13px;
 }
 /* 桌機版 */
 @media screen and (max-width: 9999px) {
@@ -376,12 +488,39 @@ div#main > form > fieldset > button {
 		width: 90%;
 	}
 	div#main > form {
-		margin-top: 15px;
+		margin: 30px auto 0px auto;
 	}
 	div#main > form > label {
 		font-size: 20px;
 	}
 	div#main > form > fieldset > input, div#main > form > fieldset > button {
+		zoom: 0.6;
+		-moz-transform: scale(0.6);
+		-moz-transform-origin: 0 0;
+	}
+	#aboutus {
+		padding: 100px 30px 30px 30px;
+	}
+	#aboutus > div.left {
+		float: none;
+		width: 100%;
+		margin: 0px auto;
+	}
+	#aboutus > div.left > b {
+		font-size: 30px;
+	}
+	#aboutus > div.left > em {
+		font-size: 20px;
+	}
+	#aboutus > div.right {
+		float: none;
+		width: 100%;
+		margin: 0px auto;
+	}
+	#aboutus > div.right > p {
+		font-size: 15px;
+	}
+	#aboutus > div.right > p > i {
 		zoom: 0.6;
 		-moz-transform: scale(0.6);
 		-moz-transform-origin: 0 0;
