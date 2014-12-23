@@ -175,14 +175,12 @@ div#main > form > fieldset > button {
 h2 {
 	margin: 0 auto 50px auto;
 	padding: 30px 0 0 0;
-	color: #fff;
 	font-size: 33px;
 	text-align: center;
 	width: 140px;
 	border-radius: 70px 70px 0 0;
 	-moz-border-radius: 70px 70px 0 0;
 	-webkit-border-radius: 70px 70px 0 0;
-	background: #C8E8F9;
 	position: absolute;
 	top: -50px;
 	left: calc(50% - 70px);
@@ -193,10 +191,18 @@ h2 > i {
 	display: block;
 	margin: 0px auto;
 }
-h2 > i.icon1 {
+h2.icon1 {
+	background: #C8E8F9;
+	color: #fff;
+}
+h2.icon1 > i {
 	background: url(../img/h2_icon.jpg) 0px 0px no-repeat;
 }
-h2 > i.icon2 {
+h2.icon2 {
+	background: #F8F1EA;
+	color: #E4D7C5;
+}
+h2.icon2 > i {
 	background: url(../img/h2_icon.jpg) 0px -70px no-repeat;
 }
 #aboutus {
@@ -242,6 +248,59 @@ h2 > i.icon2 {
 }
 #aboutus > div.right > p > i.icon_after {
 	background: url(../img/word_icon.png) 0px -35px no-repeat;
+}
+#feature {
+	padding: 100px;
+	background: #F8F1EA;
+	position: relative;
+}
+#feature p {
+	margin: 50px 0 0 0;
+	padding: 0;
+	font-size: 20px;
+}
+#feature p i {
+	width: 220px;
+	height: 220px;
+	display: inline-block;
+}
+#feature p.left {
+	text-align: left;
+}
+#feature p.left i {
+	float: left;
+	margin-right: 30px;
+}
+#feature p.right {
+	text-align: right;
+}
+#feature p.right i {
+	float: right;
+	margin-left: 30px;
+}
+#feature p b {
+	font-size: 30px;
+	margin: 0;
+	line-height: 100px;
+	display: block;
+}
+#feature p i.icon1 {
+	background: url(../img/feature_icon.png) 0px 0px no-repeat;
+}
+#feature p i.icon2 {
+	background: url(../img/feature_icon.png) -220px 0px no-repeat;
+}
+#feature p i.icon3 {
+	background: url(../img/feature_icon.png) -440px 0px no-repeat;
+}
+#feature p i.icon4 {
+	background: url(../img/feature_icon.png) 0px -220px no-repeat;
+}
+#feature p i.icon5 {
+	background: url(../img/feature_icon.png) -220px -220px no-repeat;
+}
+#feature p i.icon6 {
+	background: url(../img/feature_icon.png) -440px -220px no-repeat;
 }
 footer {
 	padding: 50px 0;
@@ -516,7 +575,7 @@ footer span {
 		-moz-transform-origin: 0 0;
 	}
 	#aboutus {
-		padding: 100px 30px 30px 30px;
+		padding: 100px 30px 100px 30px;
 	}
 	#aboutus > div.left {
 		float: none;
@@ -542,5 +601,22 @@ footer span {
 		zoom: 0.6;
 		-moz-transform: scale(0.6);
 		-moz-transform-origin: 0 0;
+	}
+	#feature {
+		padding: 100px 30px;
+	}
+	#feature p.left i, #feature p.right i {
+		float: none;
+		display: block;
+		margin: 0px auto;
+	}
+	#feature p.left, #feature p.right {
+		text-align: center;
+		font-size: 15px;
+		margin: 50px 0 0px 0;
+	}
+	#feature p.left b, #feature p.right b {
+		font-size: 20px;
+		line-height: 50px;
 	}
 }
