@@ -560,7 +560,9 @@ footer span {
 		-moz-transform: scale(0.6);
 		-moz-transform-origin: 0 0;
 	}
-	.video-container, div#main > form {
+}
+@media screen and (max-width: 568px) {
+		.video-container, div#main > form {
 		width: 90%;
 	}
 	div#main > form {
@@ -617,6 +619,7 @@ footer span {
 	}
 	#feature p.left b, #feature p.right b {
 		font-size: 20px;
-		line-height: 50px;
+		line-height: 20px;
+		margin: 25px 0 15px 0;
 	}
 }
