@@ -171,6 +171,7 @@ div#main > form > fieldset > button {
 	background: url(../img/send_icon.jpg) #9A9EAA no-repeat center 5px;
 	color: #fff;
 	padding-top: 40px;
+	float: right;
 }
 h2 {
 	margin: 0 auto 50px auto;
@@ -522,8 +523,8 @@ footer span {
 		-webkit-border-radius: 0px;
 	}
 }
-/* iPhone版 */
-@media screen and (max-width: 567px) {
+/* iPhone版-menu */
+@media screen and (max-width: 768px) {
 	div.mobile-menu a {
 		font-size: 15px;
 	}
@@ -561,7 +562,8 @@ footer span {
 		-moz-transform-origin: 0 0;
 	}
 }
-@media screen and (max-width: 568px) {
+/* iPhone版 */
+@media screen and (max-width: 768px) {
 		.video-container, div#main > form {
 		width: 90%;
 	}
