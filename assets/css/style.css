@@ -49,10 +49,12 @@ div.container nav.navbar div.container-fluid {
 a.navbar-brand {
 	width: 330px;
 	height: 180px;
-	background: url(../img/logo.png) center center no-repeat;
-	text-indent: -9999px;
 	margin: 0 !important;
 	padding: 0;
+}
+a.navbar-brand img {
+	width: 207px;
+	margin: 5px auto;
 }
 ul.nav {
 	width: 1110px;
@@ -359,7 +361,7 @@ footer span {
 	}
 }
 /* iPad版 */
-@media screen and (max-width: 1110px) {
+@media screen and (max-width: 1410px) {
 	div.container {
 		width: 100%;
 	}
@@ -416,7 +418,6 @@ footer span {
 		left: 15px;
 		width: 220px;
 		height: 43px;
-		background: url(../img/s-logo.png) no-repeat;
 	}
 	div.mobile-menu {
 		display: none;
