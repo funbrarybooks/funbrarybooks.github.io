@@ -445,6 +445,15 @@ footer span {
 	div.mobile-menu > div > span.no {
 		border: 0;
 	}
+	.video-container, div#main form {
+		width: 80%;
+	}
+	div#main form {
+		margin: 50px auto;
+	}
+	#aboutus {
+		padding: 100px 50px 50px 50px
+	}
 	#aboutus > div.right > p {
 		font-size: 20px;
 	}
