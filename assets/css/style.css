@@ -445,6 +445,11 @@ footer span {
 	div.mobile-menu > div > span.no {
 		border: 0;
 	}
+	footer {
+		border-radius: 0px;
+		-moz-border-radius: 0px;
+		-webkit-border-radius: 0px;
+	}
 }
 /* iPhone版 */
 @media screen and (max-width: 600px) {
@@ -504,7 +509,7 @@ footer span {
 	#aboutus > div.left {
 		float: none;
 		width: 100%;
-		margin: 0px auto;
+		margin: 15px auto;
 	}
 	#aboutus > div.left > b {
 		font-size: 30px;
@@ -516,6 +521,7 @@ footer span {
 		float: none;
 		width: 100%;
 		margin: 0px auto;
+		padding: 0px;
 	}
 	#aboutus > div.right > p {
 		font-size: 15px;
