@@ -40,7 +40,7 @@
 				<ul>
 					<li class="icon1 "><label  class="aboutUs" for="nav-trigger"><i></i>About</label></li>
 					<li class="icon2 right"><label class="feature" for="nav-trigger"><i></i>Feature</label></li>
-					<li class="icon3"><label  for="nav-trigger"><i></i>Blog</label></li>
+					<li class="icon3" onclick="javascript:location.href='blog.html'" ><label  for="nav-trigger"><i></i>Blog</label></li>
 					<li class="icon4 right"><label  class="contact"  for="nav-trigger"><i></i>Contact</label></li>
 				</ul>
 				<div>
@@ -184,7 +184,7 @@
 		
 		$('a.aboutUs,label.aboutUs').click(function(){
 			var cut = 115;
-			if($(window).width() > 1395){
+			if($(window).width() > 1170){
 				cut = 229;
 			}
 			var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
@@ -197,7 +197,7 @@
 		
 		$('a.feature,label.feature').click(function(){
 			var cut = 115;
-			if($(window).width() > 1395){
+			if($(window).width() > 1170){
 				cut = 229;
 			}
 			var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
@@ -210,7 +210,7 @@
 		
 		$('a.contact,label.contact').click(function(){
 			var cut = 115;
-			if($(window).width() > 1395){
+			if($(window).width() > 1170){
 				cut = 229;
 			}
 			var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');

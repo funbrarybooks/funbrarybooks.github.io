@@ -409,9 +409,12 @@ footer span {
 	div.container {
 		width: 100%;
 	}
+	nav.navbar-fixed-top div.container-fluid {
+		width: auto;
+	}
 }
 /* iPad版 */
-@media screen and (max-width: 1410px) {
+@media screen and (max-width: 1170px) {
 	div.container {
 		width: 100%;
 	}
