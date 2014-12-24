@@ -354,6 +354,90 @@ h2.icon2 > i {
 #feature p i.icon6 {
 	background: url(../img/feature_icon.png) -440px -220px no-repeat;
 }
+div.blog {
+	background-color: #FCFDF7;
+	padding: 50px 0 0 0;
+}
+div.blog > span.time {
+	display: inline-block;
+	background: #FCB64A;
+	line-height: 30px;
+	color: #fff;
+	font-size: 15px;
+	border-radius: 0 10px 10px 0;
+	-moz-border-radius: 0 10px 10px 0;
+	-webkit-border-radius: 0 10px 10px 0;
+	padding: 0 15px 0 10%;
+}
+div.blog > div {
+	padding: 15px 10%;
+	width: 100%;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+div.blog > div > h3 {
+	padding: 0;
+	margin: 0;
+	font-size: 50px;
+	line-height: 80px;
+	width: 100%;
+}
+div.blog > div > span {
+	display: block;
+	font-size: 20px;
+	width: 100%;
+	line-height: 30px;
+}
+div.blog > div > span > img {
+	width: 60px;
+	float: left;
+	margin-right: 15px;
+}
+div.blog > div > img {
+	width: 100%;
+	margin: 15px 0;
+}
+div.blog > span.share {
+	width: 80%;
+	background-color: #F6EDE3;
+	padding: 15px 0;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	display: block;
+	margin: 0 auto 50px auto;
+}
+div.blog > span.share > a {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	padding: 12px 0;
+	border-radius: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	margin: 10px 5px;
+	background: #546C7D;
+	color: #fff;
+}
+div.blog > span.share > a:hover {
+	background: #88969F;
+	color: #fff;
+}
+a#next {
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	color: #46CDE9;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+a#next i {
+	margin-top: -10px;
+}
+a#next:hover {
+	text-decoration: none;
+	color: #546C7D;
+}
 footer {
 	padding: 50px 0;
 	background: #566D7C;
@@ -583,6 +667,9 @@ footer span {
 		-moz-border-radius: 0px;
 		-webkit-border-radius: 0px;
 	}
+	div.blog {
+		margin-top: 65px;
+	}
 }
 /* iPhone版-menu */
 @media screen and (max-width: 567px) {
@@ -690,5 +777,18 @@ footer span {
 		font-size: 20px;
 		line-height: 20px;
 		margin: 25px 0 15px 0;
+	}
+	div.blog > span.time {
+		font-size: 13px;
+	}
+	div.blog > div > h3 {
+		font-size: 30px;
+		line-height: 40px;
+	}
+	div.blog > div {
+		font-size: 15px;
+	}
+	div.blog > div > span {
+		font-size: 15px;
 	}
 }
