@@ -106,36 +106,36 @@ nav.navbar-fixed-top div.container-fluid {
 	margin: 0px auto 10px auto;
 }
 .navbar-nav > li.icon1 i {
-	background: url(../img/nav_icon1.png) 0px 0px no-repeat;
 	background: url(../img/nav_icon1.svg) 0px 0px no-repeat;
+	background: url(../img/nav_icon1.png) 0px 0px no-repeat \9;
 }
 .navbar-nav > li.icon1:hover i, .navbar-nav > li.icon1 > a.active i {
-	background: url(../img/nav_icon1.png) 0px -50px no-repeat;
 	background: url(../img/nav_icon1.svg) 0px -50px no-repeat;
+	background: url(../img/nav_icon1.png) 0px -50px no-repeat \9;
 }
 .navbar-nav > li.icon2 i {
-	background: url(../img/nav_icon2.png) 0px 0px no-repeat;
 	background: url(../img/nav_icon2.svg) 0px 0px no-repeat;
+	background: url(../img/nav_icon2.png) 0px 0px no-repeat \9;
 }
 .navbar-nav > li.icon2:hover i, .navbar-nav > li.icon2 > a.active i {
-	background: url(../img/nav_icon2.png) 0px -50px no-repeat;
 	background: url(../img/nav_icon2.svg) 0px -50px no-repeat;
+	background: url(../img/nav_icon2.png) 0px -50px no-repeat \9;
 }
 .navbar-nav > li.icon3 i {
-	background: url(../img/nav_icon3.png) 0px 0px no-repeat;
 	background: url(../img/nav_icon3.svg) 0px 0px no-repeat;
+	background: url(../img/nav_icon3.png) 0px 0px no-repeat \9;
 }
 .navbar-nav > li.icon3:hover i, .navbar-nav > li.icon3 > a.active i {
-	background: url(../img/nav_icon3.png) 0px -50px no-repeat;
 	background: url(../img/nav_icon3.svg) 0px -50px no-repeat;
+	background: url(../img/nav_icon3.png) 0px -50px no-repeat \9;
 }
 .navbar-nav > li.icon4 i {
-	background: url(../img/nav_icon4.png) 0px 0px no-repeat;
 	background: url(../img/nav_icon4.svg) 0px 0px no-repeat;
+	background: url(../img/nav_icon4.png) 0px 0px no-repeat \9;
 }
 .navbar-nav > li.icon4:hover i, .navbar-nav > li.icon4 > a.active i {
-	background: url(../img/nav_icon4.png) 0px -50px no-repeat;
 	background: url(../img/nav_icon4.svg) 0px -50px no-repeat;
+	background: url(../img/nav_icon4.png) 0px -50px no-repeat \9;
 }
 div#main {
 	padding: 50px 0;
@@ -217,8 +217,8 @@ div#main > form > fieldset > input.mail {
 }
 div#main > form > fieldset > button {
 	width: 15%;
-	background: url(../img/send_icon.png) #9A9EAA no-repeat center 5px;
 	background: url(../img/send_icon.svg) #9A9EAA no-repeat center 5px;
+	background: url(../img/send_icon.png) #9A9EAA no-repeat center 5px \9;
 	color: #fff;
 	padding-top: 40px;
 	float: right;
@@ -229,8 +229,8 @@ div#main > form > fieldset > button:disabled {
 }
 div#main > form > fieldset > button:active {
 	color: #aaa;
-	background: url(../img/send_icon_.png) #eee no-repeat center 5px;
 	background: url(../img/send_icon_.svg) #eee no-repeat center 5px;
+	background: url(../img/send_icon_.png) #eee no-repeat center 5px \9;
 }
 div#main > form > div {
 	display: none;
@@ -272,16 +272,16 @@ h2.icon1 {
 	color: #fff;
 }
 h2.icon1 > i {
-	background: url(../img/h2_icon.png) 0px 0px no-repeat;
 	background: url(../img/h2_icon.svg) 0px 0px no-repeat;
+	background: url(../img/h2_icon.png) 0px 0px no-repeat \9;
 }
 h2.icon2 {
 	background: #F8F1EA;
 	color: #E4D7C5;
 }
 h2.icon2 > i {
-	background: url(../img/h2_icon.png) 0px -70px no-repeat;
 	background: url(../img/h2_icon.svg) 0px -70px no-repeat;
+	background: url(../img/h2_icon.png) 0px -70px no-repeat \9;
 }
 #aboutus {
 	padding: 150px 100px 100px 100px;
@@ -363,28 +363,28 @@ h2.icon2 > i {
 	display: block;
 }
 #feature p i.icon1 {
-	background: url(../img/feature_icon.png) 0px 0px no-repeat;
 	background: url(../img/feature_icon.svg) 0px 0px no-repeat;
+	background: url(../img/feature_icon.png) 0px 0px no-repeat \9;
 }
 #feature p i.icon2 {
-	background: url(../img/feature_icon.png) -220px 0px no-repeat;
 	background: url(../img/feature_icon.svg) -220px 0px no-repeat;
+	background: url(../img/feature_icon.png) -220px 0px no-repeat \9;
 }
 #feature p i.icon3 {
-	background: url(../img/feature_icon.png) -440px 0px no-repeat;
 	background: url(../img/feature_icon.svg) -440px 0px no-repeat;
+	background: url(../img/feature_icon.png) -440px 0px no-repeat \9;
 }
 #feature p i.icon4 {
-	background: url(../img/feature_icon.png) 0px -220px no-repeat;
 	background: url(../img/feature_icon.svg) 0px -220px no-repeat;
+	background: url(../img/feature_icon.png) 0px -220px no-repeat \9;
 }
 #feature p i.icon5 {
-	background: url(../img/feature_icon.png) -220px -220px no-repeat;
 	background: url(../img/feature_icon.svg) -220px -220px no-repeat;
+	background: url(../img/feature_icon.png) -220px -220px no-repeat \9;
 }
 #feature p i.icon6 {
-	background: url(../img/feature_icon.png) -440px -220px no-repeat;
 	background: url(../img/feature_icon.svg) -440px -220px no-repeat;
+	background: url(../img/feature_icon.png) -440px -220px no-repeat \9;
 }
 div.blog {
 	background-color: #FCFDF7;
@@ -658,20 +658,20 @@ footer span {
 		color: #fff;
 	}
 	div.mobile-menu > ul > li.icon1 i {
-		background: url(../img/nav_icon1.png) 0px -50px no-repeat;
 		background: url(../img/nav_icon1.svg) 0px -50px no-repeat;
+		background: url(../img/nav_icon1.png) 0px -50px no-repeat \9;
 	}
 	div.mobile-menu > ul > li.icon2 i {
-		background: url(../img/nav_icon2.png) 0px -50px no-repeat;
 		background: url(../img/nav_icon2.svg) 0px -50px no-repeat;
+		background: url(../img/nav_icon2.png) 0px -50px no-repeat \9;
 	}
 	div.mobile-menu > ul > li.icon3 i {
-		background: url(../img/nav_icon3.png) 0px -50px no-repeat;
 		background: url(../img/nav_icon3.svg) 0px -50px no-repeat;
+		background: url(../img/nav_icon3.png) 0px -50px no-repeat \9;
 	}
 	div.mobile-menu > ul > li.icon4 i {
-		background: url(../img/nav_icon4.png) 0px -50px no-repeat;
 		background: url(../img/nav_icon4.svg) 0px -50px no-repeat;
+		background: url(../img/nav_icon4.png) 0px -50px no-repeat \9;
 	}
 	div.mobile-menu > div {
 		float: right;
