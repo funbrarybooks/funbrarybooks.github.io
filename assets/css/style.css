@@ -791,4 +791,7 @@ footer span {
 	div.blog > div > span {
 		font-size: 15px;
 	}
+	div.blog > span.share {
+		margin: 0px auto;
+	}
 }
