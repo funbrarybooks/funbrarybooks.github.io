@@ -8,6 +8,21 @@
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="../assets/css/style.css" rel="stylesheet" type="text/css">
 </head>
+<script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', '']);
+          _gaq.push(['_setDomainName', 'funbrary.com']);
+          _gaq.push(['_trackPageview']);
+          _gaq.push(['_trackPageLoadTime']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+</script>
 <body>
 	<div class="container" id="header">
 		<div id="navbar_out">
@@ -18,7 +33,7 @@
 						<ul class="nav navbar-nav">
 							<li class="icon1"><a href=""  class="aboutUs"><i></i>關於</a></li>
 							<li class="icon2"><a href=""  class="feature"><i></i>產品特色</a></li>
-							<a class="navbar-brand goTop" href="javascript:"><img src="../assets/img/logo.svg" alt="Funbrary"></a>
+							<a class="navbar-brand goTop" href="javascript:"><img src="../assets/img/logo.svg" alt="Funbrary" onerror="this.onerror=null; this.src='logo.png'"></a>
 							<li class="icon3"><a href="blog.html"><i></i>部落格</a></li>
 							<li class="icon4"><a href=""  class="contact"><i></i>聯絡我們</a></li>
 						</ul>
@@ -35,7 +50,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</label>
-			<a href="" class="navbar-brand logo goTop"><img src="../assets/img/s-logo.svg" alt="Funbrary"></a>
+			<a href="" class="navbar-brand logo goTop"><img src="../assets/img/s-logo.svg" alt="Funbrary" onerror="this.onerror=null; this.src='s-logo.png'"></a>
 			<div class="mobile-menu" id="menu">
 				<ul>
 					<li class="icon1 "><label  class="aboutUs" for="nav-trigger"><i></i>關於</label></li>
@@ -69,7 +84,7 @@
 		<div id="aboutus">
 			<h2 class="icon1"><i></i>關於</h2>
 			<div class="left">
-				<img src="../assets/img/about_icon.svg" alt="About Us">
+				<img src="../assets/img/about_icon.svg" alt="About Us" onerror="this.onerror=null; this.src='about_icon.png'">
 				<b>MARCO</b><em>創辦者</em>
 			</div>
 			<div class="right">
@@ -114,7 +129,7 @@
 				</p>
 			</div>
 			<footer id="contact">
-				<a href="javascript:" class="goTop"><img src="../assets/img/w-logo.svg" alt="Funbrary"></a>
+				<a href="javascript:" class="goTop"><img src="../assets/img/w-logo.svg" alt="Funbrary" onerror="this.onerror=null; this.src='w-logo.png'"></a>
 				與我們聯繫
 				<div>
 					<a href="#"><i class="fa fa-twitter fa-2x"></i></a> <a href="https://www.facebook.com/funbrary" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
@@ -129,4 +144,13 @@
 	<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
 	<script src='../assets/js/header.js'></script>
 	<script src='../assets/js/main.js'></script>
+	<script src='../assets/js/modernizr.custom.49114.js'></script>
+	<script type="text/javascript">
+		if (!Modernizr.svg) {
+		    $('img[src$=".svg"]').each(function()
+		    {
+		        $(this).attr('src', $(this).attr('src').replace('.svg', '.png'));
+		    });
+		}
+	</script>
 </html>
