@@ -778,6 +778,9 @@ footer span {
 		line-height: 20px;
 		margin: 25px 0 15px 0;
 	}
+	div.blog {
+		margin-bottom: -50px;
+	}
 	div.blog > span.time {
 		font-size: 13px;
 	}
