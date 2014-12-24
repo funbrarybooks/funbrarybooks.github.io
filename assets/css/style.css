@@ -291,15 +291,15 @@ h2.icon2 > i {
 	color: #7A94A3;
 }
 #aboutus > div.right > p > i {
-	width: 53px;
-	height: 35px;
+	width: 45px;
+	height: 30px;
 	display: inline-block;
 }
 #aboutus > div.right > p > i.icon_before {
 	background: url(../img/word_icon.png) 0px 0px no-repeat;
 }
 #aboutus > div.right > p > i.icon_after {
-	background: url(../img/word_icon.png) 0px -35px no-repeat;
+	background: url(../img/word_icon.png) 0px -30px no-repeat;
 }
 #feature {
 	padding: 100px;
@@ -635,8 +635,8 @@ footer span {
 		font-size: 20px;
 	}
 	div#main > form > fieldset > input, div#main > form > fieldset > button {
-		zoom: 0.6;
-		-moz-transform: scale(0.6);
+		zoom: 0.59;
+		-moz-transform: scale(0.59);
 		-moz-transform-origin: 0 0;
 	}
 	div#main > form > span {
