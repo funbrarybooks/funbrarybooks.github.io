@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div class="container" id="header">
-		<div class="navbar_out">
+		<div id="navbar_out">
 			<div id="nav-anchor"></div>
 			<nav class="navbar navbar-default" role="navigation">
 				<div class="container-fluid">
@@ -144,6 +144,15 @@
 		     		$('nav').removeClass('navbar-fixed-top');
 		     	}
 		     });
+		     $(window).scroll(function(){
+		     	var window_top = $(window).scrollTop();
+		     	var div_top = $('#nav-anchor').offset().top;
+		     	if (window_top > div_top) {
+		     		$('#navbar_out').addClass('fix-top');
+		     	} else {
+		     		$('#navbar_out').removeClass('fix-top');
+		     	}
+		     });
 
 		 });
 
@@ -169,7 +178,7 @@
 			$('a.aboutUs,label.aboutUs').click(function(){
 				var cut = 115;
 				if($(window).width() > 1170){
-					cut = 229;
+					cut = 210;
 				}
 				var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
 				$body.animate({
@@ -182,7 +191,7 @@
 			$('a.feature,label.feature').click(function(){
 				var cut = 115;
 				if($(window).width() > 1170){
-					cut = 229;
+					cut = 210;
 				}
 				var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
 				$body.animate({
@@ -193,9 +202,9 @@
 			});
 
 			$('a.contact,label.contact').click(function(){
-				var cut = 115;
+				var cut = 64;
 				if($(window).width() > 1170){
-					cut = 229;
+					cut = 159;
 				}
 				var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
 				$body.animate({

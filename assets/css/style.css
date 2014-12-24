@@ -9,20 +9,25 @@ div.container {
 	border-radius: 20px;
 	-moz-border-radius: 20px;
 	-webkit-border-radius: 20px;
-	background: #fff;
+	background: #FDFEF8;
 	margin: 25px auto;
 	width: 1410px;
 	padding: 0;
 }
-div.container div.navbar_out {
+div.container div#navbar_out {
 	border-radius: 20px 20px 0 0;
 	-moz-border-radius: 20px 20px 0 0;
 	-webkit-border-radius: 20px 20px 0 0;
 	background: #C7E8F9;
 	width: 100%;
-	height: 260px;
+	height: 220px;
 	padding: 40px 0;
 	position: relative;
+	border-bottom: 2px solid #8C9AA3;
+}
+div.container div.fix-top {
+	border: 0 !important;
+	background: #FDFEF8 !important;
 }
 div.lang {
 	position: absolute;
@@ -41,14 +46,17 @@ div.lang span.active a {
 }
 div.container nav.navbar {
 	background: #C7E8F9;
-	height: 180px;
+	height: 160px;
 }
 div.container nav.navbar div.container-fluid {
-	height: 180px;
+	height: 160px;
+}
+.navbar-fixed-top div.container-fluid {
+	border-bottom: 2px solid #8C9AA3;
 }
 a.navbar-brand {
 	width: 330px;
-	height: 180px;
+	height: 160px;
 	margin: 0 !important;
 	padding: 0;
 }
@@ -118,7 +126,7 @@ nav.navbar-fixed-top div.container-fluid {
 	background: url(../img/nav_icon4.png) 0px -50px no-repeat;
 }
 div#main {
-	padding: 100px 0;
+	padding: 50px 0;
 	background: #FDFEF8;
 }
 .video-container {
@@ -128,7 +136,7 @@ div#main {
 	height: 0;
 	overflow: hidden;
 	width: 60%;
-	margin: 0px auto;
+	margin: 0px auto -25% auto;
 }
 .video-container iframe,
 .video-container object,
@@ -137,7 +145,7 @@ div#main {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 60%;
 	z-index: 0;
 }
 div#main > form {
@@ -499,6 +507,9 @@ footer span {
 }
 /* iPad版 */
 @media screen and (max-width: 1170px) {
+	div#main {
+		padding: 100px 0;
+	}
 	div.container {
 		width: 100%;
 	}
@@ -511,7 +522,7 @@ footer span {
 		-webkit-border-radius: 0px;
 		margin: 0px;
 	}
-	div.container div.navbar_out {
+	div.container div#navbar_out {
 		height: 65px;
 		border-bottom: 2px solid #8C9AA3;
 		border-radius: 0px;
@@ -715,6 +726,14 @@ footer span {
 	.video-container, div#main > form {
 		width: 90%;
 	}
+	.video-container {
+		margin: 0px auto;
+	}
+	.video-container iframe,
+	.video-container object,
+	.video-container embed {
+		height: 100%;
+	}
 	div#main > form {
 		margin: 30px auto 0px auto;
 	}
@@ -798,6 +817,9 @@ footer span {
 		margin: 0px auto;
 	}
 	a#next {
+		margin-top: 100px;
+	}
+	footer.blog-footer {
 		margin-top: 100px;
 	}
 }
