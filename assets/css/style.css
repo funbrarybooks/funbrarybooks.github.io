@@ -13,7 +13,6 @@ div.container {
 	margin: 10px auto;
 	width: 1410px;
 	padding: 0;
-	behavior: url(ie-css3.htc); /* 通知IE浏览器调用脚本作用于'box'类 */
 }
 div.container div#navbar_out {
 	border-radius: 20px 20px 0 0;
@@ -26,7 +25,6 @@ div.container div#navbar_out {
 	position: relative;
 	border-bottom: 2px solid #8C9AA3;
 	z-index: 999;
-	behavior: url(ie-css3.htc); /* 通知IE浏览器调用脚本作用于'box'类 */
 }
 div.container div.fix-top {
 	border: 0 !important;
@@ -46,15 +44,14 @@ div.lang a:hover, div.lang span.active a:hover {
 div.lang span.active a {
 	color: #77afc2;
 }
-div.container div.navbar {
+div.container nav.navbar {
 	background: #C7E8F9;
 	height: 120px;
 	border-radius: 20px 20px 0 0;
 	-moz-border-radius: 20px 20px 0 0;
 	-webkit-border-radius: 20px 20px 0 0;
-	behavior: url(ie-css3.htc); /* 通知IE浏览器调用脚本作用于'box'类 */
 }
-div.container div.navbar div.container-fluid {
+div.container nav.navbar div.container-fluid {
 	height: 140px;
 }
 .navbar-fixed-top div.container-fluid {
@@ -74,11 +71,11 @@ ul.nav {
 	margin: 0px auto;
 	float: none;
 }
-div.navbar-fixed-top {
+nav.navbar-fixed-top {
 	background: transparent !important;
 	border: 0;
 }
-div.navbar-fixed-top div.container-fluid {
+nav.navbar-fixed-top div.container-fluid {
 	width: 1410px;
 	margin: 0px auto;
 	background: #C7E8F9;
@@ -513,7 +510,6 @@ footer div a {
 	margin: 10px 5px;
 	background: #fff;
 	color: #566D7C;
-	behavior: url(ie-css3.htc); /* 通知IE浏览器调用脚本作用于'box'类 */
 }
 footer div a:hover {
 	background: #88969F;
@@ -550,7 +546,7 @@ input.nav-trigger, label.navbar-toggle, a.logo, div.mobile-menu {
 	div.container {
 		width: 100%;
 	}
-	div.navbar ,div.lang {
+	nav,div.lang {
 		display: none;
 	}
 	div.container {
@@ -606,7 +602,7 @@ input.nav-trigger, label.navbar-toggle, a.logo, div.mobile-menu {
 		height: 43px;
 	}
 	div.mobile-menu {
-		display: none !important;
+		display: none;
 		background: #47597B;
 		filter:alpha(opacity=95);
 		-moz-opacity:0.95;
