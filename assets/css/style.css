@@ -94,10 +94,10 @@ nav.navbar-fixed-top div.container-fluid {
 	color: #fff !important;
 }
 .navbar-nav > li.icon1, .navbar-nav > li.icon2 {
-	border-right: 1px solid #ccc;
+	border-right: 1px solid #77B0C3;
 }
 .navbar-nav > li.icon3, .navbar-nav > li.icon4 {
-	border-left: 1px solid #ccc;
+	border-left: 1px solid #77B0C3;
 }
 .navbar-nav > li.icon1 i, .navbar-nav > li.icon2 i, .navbar-nav > li.icon3 i, .navbar-nav > li.icon4 i {
 	display: block;
