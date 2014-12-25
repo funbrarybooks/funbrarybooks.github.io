@@ -13,6 +13,7 @@ div.container {
 	margin: 10px auto;
 	width: 1410px;
 	padding: 0;
+	behavior: url(../ie-css3.htc); /* 通知IE浏览器调用脚本作用于'box'类 */
 }
 div.container div#navbar_out {
 	border-radius: 20px 20px 0 0;
@@ -25,6 +26,7 @@ div.container div#navbar_out {
 	position: relative;
 	border-bottom: 2px solid #8C9AA3;
 	z-index: 999;
+	behavior: url(../ie-css3.htc); /* 通知IE浏览器调用脚本作用于'box'类 */
 }
 div.container div.fix-top {
 	border: 0 !important;
@@ -50,6 +52,7 @@ div.container div.navbar {
 	border-radius: 20px 20px 0 0;
 	-moz-border-radius: 20px 20px 0 0;
 	-webkit-border-radius: 20px 20px 0 0;
+	behavior: url(../ie-css3.htc); /* 通知IE浏览器调用脚本作用于'box'类 */
 }
 div.container div.navbar div.container-fluid {
 	height: 140px;
@@ -510,6 +513,7 @@ footer div a {
 	margin: 10px 5px;
 	background: #fff;
 	color: #566D7C;
+	behavior: url(../ie-css3.htc); /* 通知IE浏览器调用脚本作用于'box'类 */
 }
 footer div a:hover {
 	background: #88969F;
@@ -528,6 +532,7 @@ footer span {
 	}
 	input.nav-trigger, label.navbar-toggle {
 		display: none !important;
+		opacity: 0 \9;
 	}
 }
 @media screen and (max-width: 1410px) {
