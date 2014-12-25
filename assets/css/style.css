@@ -480,6 +480,12 @@ footer {
 	-moz-border-radius: 0 0 20px 20px;
 	-webkit-border-radius: 0 0 20px 20px;
 }
+footer a {
+	color: #fff;
+}
+footer a:hover {
+	color: #ccc;
+}
 footer img {
 	display: block;
 	margin: 0px auto 15px auto;
@@ -708,6 +714,9 @@ footer span {
 	}
 	div.blog {
 		margin-top: 65px;
+	}
+	div.container div.fix-top {
+		border-bottom: 2px solid #8C9AA3 !important;
 	}
 }
 /* iPhone版-menu */
