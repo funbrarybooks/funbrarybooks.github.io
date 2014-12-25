@@ -44,14 +44,14 @@ div.lang a:hover, div.lang span.active a:hover {
 div.lang span.active a {
 	color: #77afc2;
 }
-div.container nav.navbar {
+div.container div.navbar {
 	background: #C7E8F9;
 	height: 120px;
 	border-radius: 20px 20px 0 0;
 	-moz-border-radius: 20px 20px 0 0;
 	-webkit-border-radius: 20px 20px 0 0;
 }
-div.container nav.navbar div.container-fluid {
+div.container div.navbar div.container-fluid {
 	height: 140px;
 }
 .navbar-fixed-top div.container-fluid {
@@ -71,11 +71,11 @@ ul.nav {
 	margin: 0px auto;
 	float: none;
 }
-nav.navbar-fixed-top {
+div.navbar-fixed-top {
 	background: transparent !important;
 	border: 0;
 }
-nav.navbar-fixed-top div.container-fluid {
+div.navbar-fixed-top div.container-fluid {
 	width: 1410px;
 	margin: 0px auto;
 	background: #C7E8F9;
@@ -526,15 +526,15 @@ footer span {
 	a.logo, div.mobile-menu {
 		display: none;
 	}
-	input.nav-trigger {
-		display: none;
+	input.nav-trigger, label.navbar-toggle {
+		display: none !important;
 	}
 }
 @media screen and (max-width: 1410px) {
 	div.container {
 		width: 100%;
 	}
-	nav.navbar-fixed-top div.container-fluid {
+	div.navbar-fixed-top div.container-fluid {
 		width: auto;
 	}
 }
@@ -546,7 +546,7 @@ footer span {
 	div.container {
 		width: 100%;
 	}
-	nav,div.lang {
+	div.navbar ,div.lang {
 		display: none;
 	}
 	div.container {
@@ -602,7 +602,7 @@ footer span {
 		height: 43px;
 	}
 	div.mobile-menu {
-		display: none;
+		display: none !important;
 		background: #47597B;
 		filter:alpha(opacity=95);
 		-moz-opacity:0.95;
