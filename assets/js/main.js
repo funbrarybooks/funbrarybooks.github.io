@@ -17,7 +17,7 @@ $(function(){
 	});
 
 	$('a.aboutUs,label.aboutUs').click(function(){
-		var cut = 115;
+		var cut = 165;
 		if($(window).width() > 1170){
 			cut = 210;
 		}
