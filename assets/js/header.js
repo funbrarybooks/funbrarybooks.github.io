@@ -9,9 +9,9 @@ $(document).ready(function(){
 		     	var window_top = $(window).scrollTop();
 		     	var div_top = $('#nav-anchor').offset().top;
 		     	if (window_top > div_top) {
-		     		$('nav').addClass('navbar-fixed-top');
+		     		$('div.navbar').addClass('navbar-fixed-top');
 		     	} else {
-		     		$('nav').removeClass('navbar-fixed-top');
+		     		$('div.navbar').removeClass('navbar-fixed-top');
 		     	}
 		     });
 		     $(window).scroll(function(){

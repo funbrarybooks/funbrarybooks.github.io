@@ -525,16 +525,11 @@ footer span {
 	color: #949DA9;
 	font-size: 13px;
 }
-/* 桌機版 */
-@media screen and (max-width: 9999px) {
-	a.logo, div.mobile-menu {
+input.nav-trigger, label.navbar-toggle, a.logo, div.mobile-menu {
 		display: none;
-	}
-	input.nav-trigger, label.navbar-toggle {
-		display: none !important;
-		opacity: 0 \9;
-	}
+		opacity: 0;
 }
+/* 桌機版 */
 @media screen and (max-width: 1410px) {
 	div.container {
 		width: 100%;
@@ -545,6 +540,10 @@ footer span {
 }
 /* iPad版 */
 @media screen and (max-width: 1170px) {
+	label.navbar-toggle, a.logo, div.mobile-menu {
+		display: block;
+		opacity: 1;
+	}
 	div#main {
 		padding: 100px 0;
 	}
