@@ -121,8 +121,18 @@ $(document).on("submit", "form.SignInForm", function(event){
 	var post = $(this).serializeObject();
 	var name_flag = nameEmpty(post.name);
 	var mail_flag = mailEmpty(post.mail);
-	if(  name_flag && mail_flag){
-		$('.SignInForm').addClass("success");
+	if(name_flag && mail_flag){
+			var SignUpObject = Parse.Object.extend("SignUps");
+			var signUp = new SignUpObject();
+			signUp.save({name: post.name, email: post.mail}).then(
+				function success(object) {
+          $('.SignInForm').addClass("success");
+				},
+				function error(object) {
+					// Ken: Please handle the error more gracefully
+					alert('Oops, an error has occurred.  Please try again later')
+				}
+			);
 	}else{
 		$('.SignInForm').removeClass("success");
 	}
