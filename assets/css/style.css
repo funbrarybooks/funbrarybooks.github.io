@@ -252,17 +252,14 @@ div#main > form.success > div {
 	display: block;
 }
 h2 {
-	margin: 0 auto 50px auto;
-	padding: 30px 0 0 0;
+	padding: 20px 0 0 0;
 	font-size: 33px;
 	text-align: center;
 	width: 140px;
 	border-radius: 70px 70px 0 0;
 	-moz-border-radius: 70px 70px 0 0;
 	-webkit-border-radius: 70px 70px 0 0;
-	position: absolute;
-	top: -50px;
-	left: calc(50% - 70px);
+	margin: -130px auto 30px auto;
 }
 h2 > i {
 	width: 80px;
@@ -287,7 +284,7 @@ h2.icon2 > i {
 	background: url(../img/h2_icon.png) 0px -70px no-repeat \9;
 }
 #aboutus {
-	padding: 150px 100px 100px 100px;
+	padding: 100px;
 	background: #C8E8F9;
 	position: relative;
 }
