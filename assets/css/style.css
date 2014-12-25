@@ -5,6 +5,9 @@ body {
 	font-family: Arial, sans-serif;
 	color: #556C7A;
 }
+a {
+	outline: none;
+}
 div.container {
 	border-radius: 20px;
 	-moz-border-radius: 20px;
