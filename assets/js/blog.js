@@ -2,10 +2,10 @@ $(document).ready(function(){
 	$('#content').infinitescroll({
 		navSelector: "#next:last",
 		nextSelector: "#next:last",
-		itemSelector: "#content",
+		itemSelector: ".blog",
 		debug: false,
 		dataType: 'html',
-    maxPage: 6,
+    	maxPage: 6,
 		path: function(index) {
 			return "blog" + index + ".html";
 		}
