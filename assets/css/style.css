@@ -24,6 +24,7 @@ div.container div#navbar_out {
 	padding: 0;
 	position: relative;
 	border-bottom: 2px solid #8C9AA3;
+	z-index: 999;
 }
 div.container div.fix-top {
 	border: 0 !important;
