@@ -10,7 +10,7 @@ div.container {
 	-moz-border-radius: 20px;
 	-webkit-border-radius: 20px;
 	background: #FDFEF8;
-	margin: 25px auto;
+	margin: 0 auto;
 	width: 1410px;
 	padding: 0;
 }
@@ -20,8 +20,8 @@ div.container div#navbar_out {
 	-webkit-border-radius: 20px 20px 0 0;
 	background: #C7E8F9;
 	width: 100%;
-	height: 200px;
-	padding: 20px 0 0 0;
+	height: 162px;
+	padding: 10px 0 0 0;
 	position: relative;
 	border-bottom: 2px solid #8C9AA3;
 }
@@ -31,7 +31,7 @@ div.container div.fix-top {
 div.lang {
 	position: absolute;
 	right: 20px;
-	top: 20px;
+	top: 10px;
 	color: #aaa;
 }
 div.lang a {
@@ -45,22 +45,21 @@ div.lang span.active a {
 }
 div.container nav.navbar {
 	background: #C7E8F9;
-	height: 160px;
+	height: 130px;
 }
 div.container nav.navbar div.container-fluid {
-	height: 160px;
+	height: 140px;
 }
 .navbar-fixed-top div.container-fluid {
 	border-bottom: 2px solid #8C9AA3;
 }
 a.navbar-brand {
-	width: 330px;
-	height: 160px;
+	width: 300px;
 	margin: 0 !important;
 	padding: 0;
 }
 a.navbar-brand img {
-	width: 207px;
+	width: 170px;
 	margin: 5px auto;
 }
 ul.nav {
@@ -85,7 +84,7 @@ nav.navbar-fixed-top div.container-fluid {
 	text-align: center;
 	font-size: 25px;
 	font-weight: normal;
-	margin-top: 35px;
+	margin-top: 15px;
 }
 .navbar-nav > li > a {
 	color: #77afc2 !important;

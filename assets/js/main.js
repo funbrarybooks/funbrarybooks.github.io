@@ -17,9 +17,9 @@ $(function(){
 	});
 
 	$('a.aboutUs,label.aboutUs').click(function(){
-		var cut = 165;
+		var cut = 115;
 		if($(window).width() > 1170){
-			cut = 210;
+			cut = 190;
 		}
 		var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
 		$body.animate({
@@ -43,7 +43,7 @@ $(function(){
 	$('a.feature,label.feature').click(function(){
 		var cut = 115;
 		if($(window).width() > 1170){
-			cut = 210;
+			cut = 190;
 		}
 		var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
 		$body.animate({
@@ -66,7 +66,7 @@ $(function(){
 	$('a.contact,label.contact').click(function(){
 		var cut = 64;
 		if($(window).width() > 1170){
-			cut = 159;
+			cut = 139;
 		}
 		var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
 		$body.animate({
