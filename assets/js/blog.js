@@ -5,7 +5,7 @@ $(document).ready(function(){
 		itemSelector: ".blog",
 		debug: false,
 		dataType: 'html',
-    	maxPage: 6,
+    	maxPage: 5,
 		path: function(index) {
 			return "blog" + index + ".html";
 		}
