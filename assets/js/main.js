@@ -85,6 +85,18 @@ $(function(){
 
 		return false;
 	});
+
+	$('a.goTop').click(function(){
+
+		$('#aboutus1').removeClass('active');
+		$('#feature1').removeClass('active');
+		$('#contact1').removeClass('active');
+		$('#aboutus2').removeClass('active');
+		$('#feature2').removeClass('active');
+		$('#contact2').removeClass('active');
+
+		return false;
+	});
 });
 
 
