@@ -5,8 +5,8 @@ body {
 	font-family: Arial, sans-serif;
 	color: #556C7A;
 }
-a {
-	outline: none;
+a, li {
+	outline: medium none;
 }
 div.container {
 	border-radius: 20px;
