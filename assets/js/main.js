@@ -117,7 +117,7 @@ $.fn.serializeObject = function()
 	return o;
 };
 
-$(document).on("submit", "form.SignInForm", function(event){
+$(document).on("submit", "form#SignInForm", function(event){
 	var post = $(this).serializeObject();
 	var name_flag = nameEmpty(post.name);
 	var mail_flag = mailEmpty(post.mail);
@@ -126,7 +126,7 @@ $(document).on("submit", "form.SignInForm", function(event){
 			var signUp = new SignUpObject();
 			signUp.save({name: post.name, email: post.mail}).then(
 				function success(object) {
-          $('.SignInForm').addClass("success");
+          $('#SignInForm').addClass("success");
 				},
 				function error(object) {
 					// Ken: Please handle the error more gracefully
@@ -134,7 +134,7 @@ $(document).on("submit", "form.SignInForm", function(event){
 				}
 			);
 	}else{
-		$('.SignInForm').removeClass("success");
+		$('#SignInForm').removeClass("success");
 	}
 	return false;
 });
