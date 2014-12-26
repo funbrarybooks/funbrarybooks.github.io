@@ -1,6 +1,10 @@
 /* Scroll 功能 */
 var speed = 1000;	 
 
+$(document).ready(function(){
+	Parse.initialize("6mw2PPC95xdnq2siFYjs2LETHI5r5XezaQWkfjgr", "A49rD6mASsFA7WVTzM4zdR3UXJXImzAs2EqoWMYi");
+});
+
 $(function(){
 	$('a.goTop').click(function(){
 		var cut = 0;

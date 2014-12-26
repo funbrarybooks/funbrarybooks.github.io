@@ -24,9 +24,6 @@ $(document).ready(function(){
 		     	}
 		     });
 
-				 Parse.initialize("6mw2PPC95xdnq2siFYjs2LETHI5r5XezaQWkfjgr", "A49rD6mASsFA7WVTzM4zdR3UXJXImzAs2EqoWMYi");
-
-
 		 });
 jQuery(function($){
   $("a").focus(function(){
