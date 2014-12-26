@@ -130,15 +130,16 @@ $(document).on("submit", "form#SignInForm", function(event){
 			var signUp = new SignUpObject();
 			signUp.save({name: post.name, email: post.mail}).then(
 				function success(object) {
-          $('#SignInForm').addClass("success");
+          			$('#SignInForm').addClass("success");
+          			$('#error_message').css("display","none");
 				},
 				function error(object) {
-					// Ken: Please handle the error more gracefully
-					alert('Oops, an error has occurred.  Please try again later')
+					$('#error_message').css("display","block");
 				}
 			);
 	}else{
 		$('#SignInForm').removeClass("success");
+		$('#error_message').css("display","none");
 	}
 	return false;
 });
