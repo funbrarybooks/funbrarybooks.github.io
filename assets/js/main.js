@@ -185,12 +185,3 @@ function validateEmail(email) {
 	var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	return re.test(email);
 }
-
-/* IE Youtube Z-index debug */
-$(function(){
-     $("iframe").each(function(){
-      var ifr_source = $(this).attr('src');
-      var wmode = "?wmode=opaque";
-      $(this).attr('src',ifr_source+wmode);
-     });
-});
