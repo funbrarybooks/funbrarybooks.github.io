@@ -79,12 +79,14 @@ a.navbar-brand img {
 	width: 170px;
 	margin: 5px auto;
 }
+#bs-example-navbar-collapse-1 {
+	display: block;
+	opacity: 1;
+}
 ul.nav {
 	width: 1110px;
 	margin: 0px auto;
 	float: none;
-	height: 125px;
-	display: block;
 }
 nav.navbar-fixed-top {
 	background: transparent !important;
