@@ -83,6 +83,8 @@ ul.nav {
 	width: 1110px;
 	margin: 0px auto;
 	float: none;
+	height: 125px;
+	display: block;
 }
 nav.navbar-fixed-top {
 	background: transparent !important;
