@@ -5,13 +5,22 @@ $(document).ready(function(){
 		     * We use the jQuery function scroll() to recalculate our variables as the 
 		     * page is scrolled/
 		     */
+		     $(window).focus(function(){
+		     	var window_top = $(window).scrollTop();
+		     	var div_top = $('#nav-anchor').offset().top;
+		     	if (window_top > div_top) {
+		     		$('nav').addClass('noradius');
+		     	} else {
+		     		$('nav').removeClass('noradius');
+		     	}
+		     });
 		     $(window).scroll(function(){
 		     	var window_top = $(window).scrollTop();
 		     	var div_top = $('#nav-anchor').offset().top;
 		     	if (window_top > div_top) {
-		     		$('nav').addClass('navbar-fixed-top');
+		     		$('nav').addClass('noradius');
 		     	} else {
-		     		$('nav').removeClass('navbar-fixed-top');
+		     		$('nav').removeClass('noradius');
 		     	}
 		     });
 		     $(window).scroll(function(){
