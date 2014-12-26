@@ -84,6 +84,9 @@ ul.nav {
 	margin: 0px auto;
 	float: none;
 }
+ul.nav li {
+	float: left;
+}
 nav.navbar-fixed-top {
 	background: transparent !important;
 	border: 0;
