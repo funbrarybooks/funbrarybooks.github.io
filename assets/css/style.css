@@ -80,8 +80,8 @@ a.navbar-brand img {
 	margin: 5px auto;
 }
 #bs-example-navbar-collapse-1 {
-	display: block;
-	opacity: 1;
+	display: block !important;
+	opacity: 1!important;
 }
 ul.nav {
 	width: 1110px;
