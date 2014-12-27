@@ -552,7 +552,7 @@ input.nav-trigger, label.navbar-toggle, a.logo, div.mobile-menu {
 	div.container {
 		width: 100%;
 	}
-	div.navbar-fixed-top div.container-fluid {
+	nav.navbar-fixed-top div.container-fluid {
 		width: auto;
 	}
 }
