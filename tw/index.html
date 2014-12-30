@@ -10,6 +10,45 @@
 <!--[if IE]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+<!--[if IE]>
+<script type="text/javascript">
+// A no-dependancy quick and dirty method of adding basic
+// placeholder functionality to Internet Explorer 5.5+
+// Author: Jay Williams <myd3.com>
+// License: MIT License
+// Link: https://gist.github.com/1105055
+ 
+function add_placeholder (id, placeholder)
+{
+    var el = document.getElementById(id);
+    el.placeholder = placeholder;
+ 
+    el.onfocus = function ()
+    {
+        if(this.value == this.placeholder)
+        {
+            this.value = '';
+            el.style.cssText  = '';
+        }
+    };
+ 
+    el.onblur = function ()
+    {
+        if(this.value.length == 0)
+        {
+            this.value = this.placeholder;
+            el.style.cssText = 'color:#A9A9A9;';
+        }
+    };
+ 
+    el.onblur();
+}
+ 
+// Add right before </body> or inside a DOMReady wrapper
+add_placeholder('myInputField', 'IE Placeholder Text');
+ 
+</script>
+<![endif]-->
 </head>
 <!-- Google Analytics -->
 <script>
