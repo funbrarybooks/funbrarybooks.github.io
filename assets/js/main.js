@@ -159,9 +159,9 @@ $.fn.serializeObject = function()
 };
 
 $(document).on("submit", "form#SignInForm", function(event){
-	var post = $(this).serializeObject();
-	var name_flag = nameEmpty(post.name);
-	var mail_flag = mailEmpty(post.mail);
+	var get = $(this).serializeObject();
+	var name_flag = nameEmpty(get.name);
+	var mail_flag = mailEmpty(get.mail);
 	if(name_flag && mail_flag){
 			//var SignUpObject = Parse.Object.extend("SignUps");
 			//var signUp = new SignUpObject();
