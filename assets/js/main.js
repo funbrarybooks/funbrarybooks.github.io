@@ -1,9 +1,9 @@
 /* Scroll 功能 */
 var speed = 1000;	 
 
-//$(document).ready(function(){
-//	Parse.initialize("6mw2PPC95xdnq2siFYjs2LETHI5r5XezaQWkfjgr", "A49rD6mASsFA7WVTzM4zdR3UXJXImzAs2EqoWMYi");
-//});
+$(document).ready(function(){
+	Parse.initialize("6mw2PPC95xdnq2siFYjs2LETHI5r5XezaQWkfjgr", "A49rD6mASsFA7WVTzM4zdR3UXJXImzAs2EqoWMYi");
+});
 
 $(function(){
 	$('a.goTop').click(function(){
@@ -163,18 +163,18 @@ $(document).on("submit", "form#SignInForm", function(event){
 	var name_flag = nameEmpty(post.name);
 	var mail_flag = mailEmpty(post.mail);
 	if(name_flag && mail_flag){
-			//var SignUpObject = Parse.Object.extend("SignUps");
-			//var signUp = new SignUpObject();
-			//signUp.save({name: post.name, email: post.mail}).then(
-			//	function success(object) {
-       //   			$('#SignInForm').addClass("success");
-       //   			$('#error_message').css("display","none");
-			//	},
-			//	function error(object) {
-			//		$('#error_message').css("display","block");
-			//	}
-			//);
-		alert('Placeholder to call Parse to store signup info.')
+			var SignUpObject = Parse.Object.extend("SignUps");
+			var signUp = new SignUpObject();
+			signUp.save({name: post.name, email: post.mail}).then(
+				function success(object) {
+          			$('#SignInForm').addClass("success");
+          			$('#error_message').css("display","none");
+				},
+				function error(object) {
+					$('#error_message').css("display","block");
+				}
+			);
+		//alert('Placeholder to call Parse to store signup info.')
 	}else{
 		$('#SignInForm').removeClass("success");
 		$('#error_message').css("display","none");
