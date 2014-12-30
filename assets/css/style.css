@@ -207,6 +207,9 @@ div#main > form > fieldset > input, div#main > form > fieldset > button {
 	padding: 0 15px;
 	outline: 0;
 }
+div#main > form > fieldset > button {
+	line-height: normal;
+}
 div#main > form > fieldset > input.error {
 	border: 3px solid #D96D00;
 }
