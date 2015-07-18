@@ -696,19 +696,19 @@ input.nav-trigger, label.navbar-toggle, a.logo, div.mobile-menu {
 		color: #fff;
 	}
 	div.mobile-menu > ul > li.icon1 i {
-		background: url(../img/nav_icon1.svg) 0px -50px no-repeat;
+		background: url(../img/nav_icon1_i.svg) 0px -50px no-repeat;
 		background: url(../img/nav_icon1.png) 0px -50px no-repeat \9;
 	}
 	div.mobile-menu > ul > li.icon2 i {
-		background: url(../img/nav_icon2.svg) 0px -50px no-repeat;
+		background: url(../img/nav_icon2_i.svg) 0px -50px no-repeat;
 		background: url(../img/nav_icon2.png) 0px -50px no-repeat \9;
 	}
 	div.mobile-menu > ul > li.icon3 i {
-		background: url(../img/nav_icon3.svg) 0px -50px no-repeat;
+		background: url(../img/nav_icon3_i.svg) 0px -50px no-repeat;
 		background: url(../img/nav_icon3.png) 0px -50px no-repeat \9;
 	}
 	div.mobile-menu > ul > li.icon4 i {
-		background: url(../img/nav_icon4.svg) 0px -50px no-repeat;
+		background: url(../img/nav_icon4_i.svg) 0px -50px no-repeat;
 		background: url(../img/nav_icon4.png) 0px -50px no-repeat \9;
 	}
 	div.mobile-menu > div {
