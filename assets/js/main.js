@@ -70,7 +70,7 @@ $(function(){
 	$('a.contact,label.contact').click(function(){
 		var cut = 64;
 		if($(window).width() > 1170){
-			cut = 139;
+			cut = 119;
 		}
 		var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
 		$body.animate({

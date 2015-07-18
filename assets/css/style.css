@@ -19,12 +19,12 @@ div.container {
 	margin: 10px auto;
 }
 div.container div#navbar_out {
-	border-radius: 20px 20px 0 0;
-	-moz-border-radius: 20px 20px 0 0;
-	-webkit-border-radius: 20px 20px 0 0;
+	border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
 	background: #C7E8F9;
 	width: 100%;
-	height: 140px;
+	height: 120px;
 	padding: 0;
 	position: relative;
 	z-index: 999;
@@ -35,31 +35,34 @@ div.container div.fix-top {
 div.lang {
 	position: absolute;
 	right: 20px;
-	top: 10px;
+	top: 11px;
 	color: #aaa;
 	z-index: 9999;
+	font-size: 12px;
 }
 div.lang a {
 	color: #aaa;
+	
 }
 div.lang a:hover, div.lang span.active a:hover {
 	color: #fff;
 }
 div.lang span.active a {
 	color: #77afc2;
+	
 }
 div.container nav.navbar {
 	background: #C7E8F9;
-	height: 120px;
+	height: 100px;
 	border-radius: 20px 20px 0 0;
 	-moz-border-radius: 20px 20px 0 0;
 	-webkit-border-radius: 20px 20px 0 0;
 }
 div.container nav.navbar div.container-fluid {
-	height: 140px;
-	border-radius: 20px 20px 0 0;
-	-moz-border-radius: 20px 20px 0 0;
-	-webkit-border-radius: 20px 20px 0 0;
+	height: 120px;
+	border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
 	position: relative;
 }
 div.container nav.noradius {
@@ -76,8 +79,8 @@ a.navbar-brand {
 	padding: 0;
 }
 a.navbar-brand img {
-	width: 170px;
-	margin: 5px auto;
+	width: 120px;
+	margin: 20px auto;
 }
 ul.nav {
 	width: 1110px;
@@ -105,7 +108,7 @@ nav.navbar-fixed-top div.container-fluid {
 .navbar-nav > li {
 	width: 195px;
 	text-align: center;
-	font-size: 25px;
+	font-size: 14px;
 	font-weight: normal;
 	margin-top: 15px;
 }
@@ -123,8 +126,8 @@ nav.navbar-fixed-top div.container-fluid {
 }
 .navbar-nav > li.icon1 i, .navbar-nav > li.icon2 i, .navbar-nav > li.icon3 i, .navbar-nav > li.icon4 i {
 	display: block;
-	width: 75px;
-	height: 50px;
+	width: 53px;
+	height: 35px;
 	margin: 0px auto 10px auto;
 }
 .navbar-nav > li.icon1 i {
@@ -132,32 +135,32 @@ nav.navbar-fixed-top div.container-fluid {
 	background: url(../img/nav_icon1.png) 0px 0px no-repeat \9;
 }
 .navbar-nav > li.icon1:hover i, .navbar-nav > li.icon1 > a.active i {
-	background: url(../img/nav_icon1.svg) 0px -50px no-repeat;
-	background: url(../img/nav_icon1.png) 0px -50px no-repeat \9;
+	background: url(../img/nav_icon1.svg) 0px -35px no-repeat;
+	background: url(../img/nav_icon1.png) 0px -35px no-repeat \9;
 }
 .navbar-nav > li.icon2 i {
 	background: url(../img/nav_icon2.svg) 0px 0px no-repeat;
 	background: url(../img/nav_icon2.png) 0px 0px no-repeat \9;
 }
 .navbar-nav > li.icon2:hover i, .navbar-nav > li.icon2 > a.active i {
-	background: url(../img/nav_icon2.svg) 0px -50px no-repeat;
-	background: url(../img/nav_icon2.png) 0px -50px no-repeat \9;
+	background: url(../img/nav_icon2.svg) 0px -35px no-repeat;
+	background: url(../img/nav_icon2.png) 0px -35px no-repeat \9;
 }
 .navbar-nav > li.icon3 i {
 	background: url(../img/nav_icon3.svg) 0px 0px no-repeat;
 	background: url(../img/nav_icon3.png) 0px 0px no-repeat \9;
 }
 .navbar-nav > li.icon3:hover i, .navbar-nav > li.icon3 > a.active i {
-	background: url(../img/nav_icon3.svg) 0px -50px no-repeat;
-	background: url(../img/nav_icon3.png) 0px -50px no-repeat \9;
+	background: url(../img/nav_icon3.svg) 0px -35px no-repeat;
+	background: url(../img/nav_icon3.png) 0px -35px no-repeat \9;
 }
 .navbar-nav > li.icon4 i {
 	background: url(../img/nav_icon4.svg) 0px 0px no-repeat;
 	background: url(../img/nav_icon4.png) 0px 0px no-repeat \9;
 }
 .navbar-nav > li.icon4:hover i, .navbar-nav > li.icon4 > a.active i {
-	background: url(../img/nav_icon4.svg) 0px -50px no-repeat;
-	background: url(../img/nav_icon4.png) 0px -50px no-repeat \9;
+	background: url(../img/nav_icon4.svg) 0px -35px no-repeat;
+	background: url(../img/nav_icon4.png) 0px -35px no-repeat \9;
 }
 div#main {
 	padding: 50px 0;
@@ -169,7 +172,7 @@ div#main {
 	padding-top: 30px;
 	height: 0;
 	overflow: hidden;
-	width: 60%;
+	width: 50%;
 	margin: 0px auto -25% auto;
 }
 .video-container iframe,
@@ -185,12 +188,12 @@ div#main {
 div#main > form {
 	padding: 0;
 	margin: 100px auto;
-	width: 60%;
+	width: 50%;
 	position: relative;
 	z-index: 99;
 }
 div#main > form > label {
-	font-size: 30px;
+	font-size: 18px;
 	color: #9A9EAA;
 	font-weight: normal;
 	margin-bottom: 15px;
@@ -307,7 +310,7 @@ h2.icon2 > i {
 	background: url(../img/h2_icon.png) 0px -70px no-repeat \9;
 }
 #aboutus {
-	padding: 100px;
+	padding: 80px;
 	background: #C8E8F9;
 	position: relative;
 }
@@ -351,7 +354,7 @@ h2.icon2 > i {
 	background: url(../img/word_icon.png) 0px -30px no-repeat;
 }
 #feature {
-	padding: 100px;
+	padding: 80px;
 	background: #F8F1EA;
 	position: relative;
 }
