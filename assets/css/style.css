@@ -168,7 +168,7 @@ div#main {
 }
 .video-container {
 	position: relative;
-	padding-bottom: 50%;
+	padding-bottom: 53%;
 	padding-top: 30px;
 	height: 0;
 	overflow: hidden;
@@ -193,7 +193,7 @@ div#main > form {
 	z-index: 99;
 }
 div#main > form > label {
-	font-size: 18px;
+	font-size: 20px;
 	color: #9A9EAA;
 	font-weight: normal;
 	margin-bottom: 15px;
@@ -556,6 +556,7 @@ input.nav-trigger, label.navbar-toggle, a.logo, div.mobile-menu {
 }
 /* 桌機版 */
 @media screen and (max-width: 1410px) {
+	
 	div.container {
 		width: 100%;
 	}
@@ -563,6 +564,7 @@ input.nav-trigger, label.navbar-toggle, a.logo, div.mobile-menu {
 		width: auto;
 	}
 }
+
 /* iPad版 */
 @media screen and (max-width: 1170px) {
 	label.navbar-toggle, a.logo, div.mobile-menu {
