@@ -168,7 +168,7 @@ div#main {
 }
 .video-container {
 	position: relative;
-	padding-bottom: 56.25%;
+	padding-bottom: 50%;
 	padding-top: 30px;
 	height: 0;
 	overflow: hidden;
@@ -204,7 +204,7 @@ div#main > form > fieldset {
 div#main > form > fieldset > input, div#main > form > fieldset > button {
 	height: 75px;
 	line-height: 75px;
-	font-size: 20px;
+	font-size: 18px;
 	border: 0;
 	float: left;
 	padding: 0 15px;
@@ -630,6 +630,10 @@ input.nav-trigger, label.navbar-toggle, a.logo, div.mobile-menu {
 		width: 220px;
 		height: 43px;
 	}
+	a.navbar-brand img {
+	width: 170px;
+	margin: 5px auto;
+}
 	div.mobile-menu {
 		display: none;
 		background: #47597B;
