@@ -14,7 +14,7 @@ div.container {
 	-webkit-border-radius: 20px;
 	background: #FDFEF8;
 	margin: 0 auto;
-	width: 1410px;
+	width: 1300px;
 	padding: 0;
 	margin: 10px auto;
 }
@@ -24,7 +24,7 @@ div.container div#navbar_out {
 	-webkit-border-radius: 10px 10px 0 0;
 	background: #C7E8F9;
 	width: 100%;
-	height: 120px;
+	height: 100px;
 	padding: 0;
 	position: relative;
 	z-index: 999;
@@ -59,7 +59,7 @@ div.container nav.navbar {
 	-webkit-border-radius: 20px 20px 0 0;
 }
 div.container nav.navbar div.container-fluid {
-	height: 120px;
+	height: 100px;
 	border-radius: 10px 10px 0 0;
 	-moz-border-radius: 10px 10px 0 0;
 	-webkit-border-radius: 10px 10px 0 0;
@@ -79,11 +79,11 @@ a.navbar-brand {
 	padding: 0;
 }
 a.navbar-brand img {
-	width: 120px;
-	margin: 20px auto;
+	width: 100px;
+	margin: 12px auto;
 }
 ul.nav {
-	width: 1110px;
+	width: 1000px;
 	margin: 0px auto;
 	float: none;
 }
@@ -97,7 +97,7 @@ nav.navbar-fixed-top {
 	z-index: 999999999;
 }
 nav.navbar-fixed-top div.container-fluid {
-	width: 1410px;
+	width: 1300px;
 	margin: 0px auto;
 	background: #C7E8F9;
 	border-bottom: 2px solid #8C9AA3;
@@ -106,11 +106,11 @@ nav.navbar-fixed-top div.container-fluid {
 	border: 0;
 }
 .navbar-nav > li {
-	width: 195px;
+	width: 175px;
 	text-align: center;
 	font-size: 14px;
 	font-weight: normal;
-	margin-top: 15px;
+	margin-top: 10px;
 }
 .navbar-nav > li > a {
 	color: #77afc2 !important;
@@ -126,41 +126,41 @@ nav.navbar-fixed-top div.container-fluid {
 }
 .navbar-nav > li.icon1 i, .navbar-nav > li.icon2 i, .navbar-nav > li.icon3 i, .navbar-nav > li.icon4 i {
 	display: block;
-	width: 53px;
-	height: 35px;
-	margin: 0px auto 10px auto;
+	width: 40px;
+	height: 25px;
+	margin: 0px auto 7px auto;
 }
 .navbar-nav > li.icon1 i {
 	background: url(../img/nav_icon1.svg) 0px 0px no-repeat;
 	background: url(../img/nav_icon1.png) 0px 0px no-repeat \9;
 }
 .navbar-nav > li.icon1:hover i, .navbar-nav > li.icon1 > a.active i {
-	background: url(../img/nav_icon1.svg) 0px -35px no-repeat;
-	background: url(../img/nav_icon1.png) 0px -35px no-repeat \9;
+	background: url(../img/nav_icon1.svg) 0px -25px no-repeat;
+	background: url(../img/nav_icon1.png) 0px -25px no-repeat \9;
 }
 .navbar-nav > li.icon2 i {
 	background: url(../img/nav_icon2.svg) 0px 0px no-repeat;
 	background: url(../img/nav_icon2.png) 0px 0px no-repeat \9;
 }
 .navbar-nav > li.icon2:hover i, .navbar-nav > li.icon2 > a.active i {
-	background: url(../img/nav_icon2.svg) 0px -35px no-repeat;
-	background: url(../img/nav_icon2.png) 0px -35px no-repeat \9;
+	background: url(../img/nav_icon2.svg) 0px -25px no-repeat;
+	background: url(../img/nav_icon2.png) 0px -25px no-repeat \9;
 }
 .navbar-nav > li.icon3 i {
 	background: url(../img/nav_icon3.svg) 0px 0px no-repeat;
 	background: url(../img/nav_icon3.png) 0px 0px no-repeat \9;
 }
 .navbar-nav > li.icon3:hover i, .navbar-nav > li.icon3 > a.active i {
-	background: url(../img/nav_icon3.svg) 0px -35px no-repeat;
-	background: url(../img/nav_icon3.png) 0px -35px no-repeat \9;
+	background: url(../img/nav_icon3.svg) 0px -25px no-repeat;
+	background: url(../img/nav_icon3.png) 0px -25px no-repeat \9;
 }
 .navbar-nav > li.icon4 i {
 	background: url(../img/nav_icon4.svg) 0px 0px no-repeat;
 	background: url(../img/nav_icon4.png) 0px 0px no-repeat \9;
 }
 .navbar-nav > li.icon4:hover i, .navbar-nav > li.icon4 > a.active i {
-	background: url(../img/nav_icon4.svg) 0px -35px no-repeat;
-	background: url(../img/nav_icon4.png) 0px -35px no-repeat \9;
+	background: url(../img/nav_icon4.svg) 0px -25px no-repeat;
+	background: url(../img/nav_icon4.png) 0px -25px no-repeat \9;
 }
 div#main {
 	padding: 50px 0;
@@ -168,11 +168,11 @@ div#main {
 }
 .video-container {
 	position: relative;
-	padding-bottom: 53%;
+	padding-bottom: 43%;
 	padding-top: 30px;
 	height: 0;
 	overflow: hidden;
-	width: 50%;
+	width: 40%;
 	margin: 0px auto -25% auto;
 }
 .video-container iframe,
@@ -180,9 +180,9 @@ div#main {
 .video-container embed {
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 0px;
 	width: 100%;
-	height: 60%;
+	height: 55%;
 	z-index: 0;
 }
 div#main > form {
@@ -549,10 +549,10 @@ input.nav-trigger, label.navbar-toggle, a.logo, div.mobile-menu {
 	opacity: 0;
 }
 .anchor {
-	  display: block;
-	  height: 170px; /* 高度與navbar相同, 用來補上被navbar覆蓋的高度 */
-	  margin-top: -170px; /* 高度與navbar相同, 將頁面內容拉近, 不要造成額外空白 */
-	  visibility: hidden; /* 隱藏 */
+	display: block;
+	height: 150px; /* 高度與navbar相同, 用來補上被navbar覆蓋的高度 */
+	margin-top: -150px; /* 高度與navbar相同, 將頁面內容拉近, 不要造成額外空白 */
+	visibility: hidden; /* 隱藏 */
 }
 /* 桌機版 */
 @media screen and (max-width: 1410px) {
@@ -567,6 +567,26 @@ input.nav-trigger, label.navbar-toggle, a.logo, div.mobile-menu {
 
 /* iPad版 */
 @media screen and (max-width: 1170px) {
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+	width: 50%;
+	margin: 0px auto -25% auto;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60%;
+	z-index: 0;
+}
+
 	label.navbar-toggle, a.logo, div.mobile-menu {
 		display: block;
 		opacity: 1;
@@ -745,6 +765,9 @@ input.nav-trigger, label.navbar-toggle, a.logo, div.mobile-menu {
 	#aboutus > div.right > p {
 		font-size: 20px;
 	}
+	#feature {
+		padding: 100px;
+	}
 	footer {
 		border-radius: 0px;
 		-moz-border-radius: 0px;
@@ -760,6 +783,8 @@ input.nav-trigger, label.navbar-toggle, a.logo, div.mobile-menu {
 		  height: 95px; /* 高度與navbar相同, 用來補上被navbar覆蓋的高度 */
 		  margin-top: -95px; /* 高度與navbar相同, 將頁面內容拉近, 不要造成額外空白 */
 	}
+	
+	
 }
 /* iPhone版-menu */
 @media screen and (max-width: 567px) {

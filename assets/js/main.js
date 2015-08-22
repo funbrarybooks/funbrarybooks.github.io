@@ -9,7 +9,7 @@ $(function(){
 	$('a.goTop').click(function(){
 		var cut = 0;
 		if($(window).width() > 1170){
-			cut = 30;
+			cut = 10;
 		}
 
 		var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
@@ -23,7 +23,7 @@ $(function(){
 	$('a.aboutUs,label.aboutUs').click(function(){
 		var cut = 95;
 		if($(window).width() > 1170){
-			cut = 170;
+			cut = 150;
 		}
 		var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
 		$body.animate({
@@ -47,7 +47,7 @@ $(function(){
 	$('a.feature,label.feature').click(function(){
 		var cut = 95;
 		if($(window).width() > 1170){
-			cut = 170;
+			cut = 150;
 		}
 		var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
 		$body.animate({
