@@ -165,7 +165,7 @@ $(document).on("submit", "form#SignInForm", function(event){
 	if(name_flag && mail_flag){
 			var SignUpObject = Parse.Object.extend("SignUps");
 			var signUp = new SignUpObject();
-			signUp.save({name: post.name, email: post.mail}).then(
+			signUp.save({name: post.name, email: post.mail, lang: post.lang}).then(
 				function success(object) {
           			$('#SignInForm').addClass("success");
           			$('#error_message').css("display","none");
