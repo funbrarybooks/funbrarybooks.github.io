@@ -927,3 +927,9 @@ input.nav-trigger, label.navbar-toggle, a.logo, div.mobile-menu {
 		margin-top: 100px;
 	}
 }
+div#main > form > #newlabel {
+	font-size: 20px;
+	color: #F2623a;
+	font-weight: normal;
+	margin-bottom: 15px;
+}
